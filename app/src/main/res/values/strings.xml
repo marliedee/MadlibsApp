@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Story_App_HW_Dantes_Marly</string>
+    <string name="enter_name">Enter Name!</string>
+    <string name="enter_name_edit">Enter Name</string>
+    <string name="next">Next</string>
+    <string name="enter_color">Enter Color</string>
+    <string name="enter_a_place">Enter a Place</string>
+    <string name="enter_a_villain_s_name">Enter a Villain\'s Name</string>
+    <string name="enter_a_wish">Enter a Wish</string>
+    <string name="enter_your_weakness">Enter your weakness</string>
+    <string name="enter_your_hometown">Enter Your Hometown</string>
+    <string name="end">End</string>
+    <string name="story">Hi</string>
+    <string name="home">Home</string>
+    <string name="back">Back</string>
+    <string name ="madlibs">MADLIBS!!!</string>
+
+</resources>
