@@ -3,8 +3,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/azure</item>
-        <item name="colorPrimaryDark">@color/bright_pink</item>
+        <item name="colorPrimary">#ef7c7c</item>
+        <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">@color/red</item>
         <item name="android:fontFamily">"@font/serif-monospace"</item>
 

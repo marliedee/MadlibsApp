@@ -16,11 +16,20 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class SecondActivity extends AppCompatActivity {
+    static String TWO;
+    static String EXTRA_MESSAGE;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
+        EXTRA_MESSAGE = getIntent().getStringExtra(MainActivity.NAME);
+
+        EditText EXTRA_MESSAGE2 = findViewById(R.id.secondEdit);
+        final String TWO = EXTRA_MESSAGE2.getText().toString();
+
 
         ConstraintLayout cl = findViewById(R.id.secondLayout);
         Random rnd = new Random();
@@ -31,10 +40,10 @@ public class SecondActivity extends AppCompatActivity {
         Button button = findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intentTwo = new Intent(getApplicationContext(), ThirdActivity.class);
-//                final String str = getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE);
+                Intent intentTwo = new Intent(SecondActivity.this, ThirdActivity.class);
+                intentTwo.putExtra(EXTRA_MESSAGE, TWO);
                 startActivity(intentTwo);
-//                intentTwo.putExtra(str, EXTRA_MESSAGE2);
+
             }
 
 
