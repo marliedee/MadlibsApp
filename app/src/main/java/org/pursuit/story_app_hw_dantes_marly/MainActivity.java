@@ -13,8 +13,7 @@ import android.widget.EditText;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    final static String STR = "" ;
-    static String NAME;
+    String NAME;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                intent.putExtra(STR, NAME);
+                intent.putExtra("one", NAME);
                 startActivity(intent);
 
 

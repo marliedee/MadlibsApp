@@ -8,24 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
 import java.util.Random;
 
 public class SecondActivity extends AppCompatActivity {
-    static String TWO;
-    static String EXTRA_MESSAGE;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-
-        EXTRA_MESSAGE = getIntent().getStringExtra(MainActivity.NAME);
 
         EditText EXTRA_MESSAGE2 = findViewById(R.id.secondEdit);
         final String TWO = EXTRA_MESSAGE2.getText().toString();
@@ -36,18 +26,19 @@ public class SecondActivity extends AppCompatActivity {
         int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
         cl.setBackgroundColor(color);
 
-
         Button button = findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intentTwo = new Intent(SecondActivity.this, ThirdActivity.class);
-                intentTwo.putExtra(EXTRA_MESSAGE, TWO);
+                intentTwo.putExtra("two",TWO);
                 startActivity(intentTwo);
 
             }
 
 
         });
+
+
             }
 
 
